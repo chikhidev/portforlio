@@ -1,7 +1,7 @@
 /* Font Faces */
 @font-face {
   font-family: 'PixelFont';
-  src: url('/src/assets/fonts/Tiny5-Regular.ttf') format('truetype');
+  src: url('/src/assets/fonts/Minecraft\ Seven_2.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -59,6 +59,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'PixelFont', monospace;
   font-size: 2rem;
 }
 

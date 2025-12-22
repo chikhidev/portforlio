@@ -21,7 +21,7 @@ const ProjectsPage = React.memo(() => {
       <PixelLayout variant="default">
         <div className="projects-page__header">
           
-          <h1 className="projects-page__title">Portfolio Projects</h1>
+          <h1 className="projects-page__title pixel-font">Portfolio Projects</h1>
           <p className="projects-page__subtitle">
             A collection of systems, graphics, web, and foundational projects
           </p>
