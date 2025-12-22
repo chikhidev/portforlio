@@ -1,0 +1,110 @@
+/* PixelButton Styles */
+
+.pixel-button {
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #333333;
+  background-color: #111111;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Default variant */
+.pixel-button--default {
+  border-color: #444444;
+  background-color: #1a1a1a;
+}
+
+.pixel-button--default:hover:not(:disabled) {
+  border-color: #666666;
+  background-color: #2a2a2a;
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 #333333;
+}
+
+.pixel-button--default:active:not(:disabled) {
+  transform: translate(0, 0);
+  box-shadow: 0 0 0 #333333;
+  border-color: #555555;
+}
+
+/* Primary variant */
+.pixel-button--primary {
+  border-color: #666666;
+  background-color: #222222;
+}
+
+.pixel-button--primary:hover:not(:disabled) {
+  border-color: #ffffff;
+  background-color: #333333;
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 #555555;
+}
+
+.pixel-button--primary:active:not(:disabled) {
+  transform: translate(0, 0);
+  box-shadow: 0 0 0 #555555;
+  border-color: #999999;
+}
+
+/* Secondary variant */
+.pixel-button--secondary {
+  border-color: #333333;
+  background-color: #0a0a0a;
+}
+
+.pixel-button--secondary:hover:not(:disabled) {
+  border-color: #555555;
+  background-color: #161616;
+}
+
+/* Disabled state */
+.pixel-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Focus state */
+.pixel-button:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: -2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pixel-button {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .pixel-button--default:hover:not(:disabled),
+  .pixel-button--primary:hover:not(:disabled) {
+    transform: translate(-1px, -1px);
+    box-shadow: 2px 2px 0 #333333;
+  }
+
+  .pixel-button--default:active:not(:disabled),
+  .pixel-button--primary:active:not(:disabled) {
+    box-shadow: 0 0 0 #333333;
+  }
+}
+
+@media (max-width: 480px) {
+  .pixel-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}

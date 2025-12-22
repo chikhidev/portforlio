@@ -1,0 +1,80 @@
+/* PixelLayout Styles */
+
+.pixel-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pixel-layout--default {
+  gap: 2rem;
+}
+
+.pixel-layout--compact {
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.pixel-layout--tight {
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.pixel-layout--hero {
+  gap: 3rem;
+  padding: 3rem 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.pixel-layout--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pixel-layout {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .pixel-layout--hero {
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+    min-height: 50vh;
+  }
+
+  .pixel-layout--grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pixel-layout {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .pixel-layout--hero {
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+    min-height: 40vh;
+  }
+
+  .pixel-layout--grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
