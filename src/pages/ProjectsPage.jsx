@@ -20,10 +20,16 @@ const ProjectsPage = React.memo(() => {
     <div className="projects-page">
       <PixelLayout variant="default">
         <div className="projects-page__header">
+          
           <h1 className="projects-page__title">Portfolio Projects</h1>
           <p className="projects-page__subtitle">
             A collection of systems, graphics, web, and foundational projects
           </p>
+        </div>
+        <div>
+            <Link to="/" className="">
+            <PixelButton variant="secondary">← Home</PixelButton>
+          </Link>
         </div>
       </PixelLayout>
 

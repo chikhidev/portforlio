@@ -1,5 +1,9 @@
 /* App Container Styles */
 
+.bg-yellow{
+  color: #f0ff67;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -17,4 +21,13 @@ html {
 ::selection {
   background-color: #333333;
   color: #ffffff;
+}
+
+
+.app-404{
+  height: 100vh;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

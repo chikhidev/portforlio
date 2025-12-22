@@ -1,3 +1,12 @@
+/* Font Faces */
+@font-face {
+  font-family: 'PixelFont';
+  src: url('/src/assets/fonts/Tiny5-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Reset and Base Styles */
 *,
 *::before,
@@ -31,6 +40,12 @@ body {
   background-color: #000000;
 }
 
+#github-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
@@ -39,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family: 'PixelFont', monospace;
   font-size: 2.5rem;
 }
 
@@ -63,8 +79,8 @@ p {
 a {
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.2s ease;
+  /* border-bottom: 2px solid transparent; */
+  /* transition: border-color 0.2s ease; */
 }
 
 a:hover {
