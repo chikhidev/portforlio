@@ -71,10 +71,6 @@ const HeroSection = React.memo(() => {
             Download Resume
           </PixelButton>
           <PixelButton variant="secondary" href="https://github.com/chikhidev">
-            <img
-              id="github-avatar"
-              src="https://avatars.githubusercontent.com/u/126016947?v=4"
-            />
             GitHub
           </PixelButton>
         </div>

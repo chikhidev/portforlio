@@ -100,52 +100,6 @@ export const projects = [
     status: "completed",
   },
 
-  {
-    id: "inception",
-    slug: "inception",
-    category: projectCategories.GRAPHICS_SYSTEMS,
-    title: "Inception — Docker Infrastructure",
-    shortDescription:
-      "Multi-container Docker environment with Nginx, WordPress, and MariaDB",
-    description:
-      "Infrastructure-as-Code project demonstrating DevOps fundamentals and container orchestration.",
-    longDescription: `Inception is a comprehensive Docker infrastructure project showcasing understanding of containerization, service orchestration, and secure system design.
-
-## Architecture
-
-- **Nginx**: Reverse proxy and web server with TLS/SSL
-- **WordPress**: PHP-FPM based content management system
-- **MariaDB**: Persistent relational database with secure configuration
-
-## Implementation Focus
-
-- Container isolation and security boundaries
-- Inter-container networking with custom Docker networks
-- Volume management for data persistence
-- Environment configuration management
-
-## DevOps Practices
-
-- Infrastructure as Code using Docker Compose
-- Multi-stage builds for optimization
-- Secure credential handling
-- Service health checks and restart policies
-- Performance monitoring considerations
-
-## Technical Highlights
-
-- Docker and Docker Compose
-- Linux networking and namespace isolation
-- SSL/TLS certificate management
-- Database replication and backup strategies
-- Container logging and debugging
-
-**Skills**: DevOps, Docker, Linux Systems, Security, Infrastructure Design`,
-    tags: ["Docker", "DevOps", "Nginx", "WordPress", "MariaDB"],
-    technologies: ["Docker", "Docker Compose", "Linux", "SSL/TLS", "Bash"],
-    year: "2024",
-    status: "completed",
-  },
 
   // Web & Application Projects
   {
